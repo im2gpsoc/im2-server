@@ -1,0 +1,4 @@
+/target
+/jpaserver_derby_files
+*.log
+/target/

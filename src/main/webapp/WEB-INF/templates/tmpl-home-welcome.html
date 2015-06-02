@@ -4,9 +4,9 @@
 		<th:block th:if="${serverId} == 'home'">
 			<p>
 				This is the home for the FHIR test server operated by
-				<a href="http://uhn.ca">University Health Network</a>. This server
+				<a href="http://hscic.gov.uk">HSCIC</a>. This server
 				(and the testing application you are currently using to access it)
-				is entirely built using
+				is built using
 				<a href="https://github.com/jamesagnew/hapi-fhir">HAPI-FHIR</a>, 
 				a 100% open-source Java implementation of the
 				<a href="http://hl7.org/implement/standards/fhir/">FHIR specification</a>.
@@ -17,18 +17,13 @@
 			<ul>
 				<li>
 					View a
-					<a href="http://fhirtest.uhn.ca/search?serverId=home&amp;encoding=json&amp;pretty=true&amp;resource=Patient&amp;param.0.type=string&amp;param.0.name=_id&amp;param.0.0=&amp;resource-search-limit=">list of patients</a>
+					<a href="search?serverId=home&amp;encoding=json&amp;pretty=true&amp;resource=Patient&amp;param.0.type=string&amp;param.0.name=_id&amp;param.0.0=&amp;resource-search-limit=">list of patients</a>
 					on this server.
 				</li>
 				<li>
 					Construct a
-					<a href="http://fhirtest.uhn.ca/resource?serverId=home&amp;encoding=json&amp;pretty=true&amp;resource=Patient">search query</a>
+					<a href="resource?serverId=home&amp;encoding=json&amp;pretty=true&amp;resource=Patient">search query</a>
 					on this server.
-				</li>
-				<li>
-					Access a 
-					<a href="http://fhirtest.uhn.ca/home?serverId=furore">different server</a>
-					(use the <b>Server</b> menu at the top of the page to see a list of public FHIR servers)
 				</li>
 			</ul>
 		</th:block>

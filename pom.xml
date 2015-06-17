@@ -8,37 +8,20 @@
 
 	<name>GPSoC IM2 Server</name>
 
-<!--
- 	<repositories>
- 		<repository>
- 			<id>oss-snapshots</id>
- 			<snapshots>
- 				<enabled>true</enabled>
- 			</snapshots>
- 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
- 		</repository>
- 	</repositories>
--->
-
 	<dependencies>
 
 		<!-- This dependency includes the core HAPI-FHIR classes -->
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-base</artifactId>
-			<version>0.9</version>
+			<version>1.0</version>
 		</dependency>
 		
 		<!-- At least one "structures" JAR must also be included -->
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
-			<artifactId>hapi-fhir-structures-dstu</artifactId>
-			<version>0.9</version>
-		</dependency>
-		<dependency>
-			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-dstu2</artifactId>
-			<version>0.9</version>
+			<version>1.0</version>
 		</dependency>
 
 		<!-- 
@@ -48,14 +31,14 @@
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-jpaserver-base</artifactId>
-			<version>0.9</version>
+			<version>1.0</version>
 		</dependency>
 
 		<!-- This dependency is used for the "FHIR Tester" web app overlay -->
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-testpage-overlay</artifactId>
-			<version>0.9</version>
+			<version>1.0</version>
 			<type>war</type>
 			<scope>provided</scope>		
 		</dependency>
@@ -218,17 +201,6 @@
 				</dependencies>
 				-->
 				<executions>
-<!--				<execution>
-						<id>o10g</id>
-						<goals>
-							<goal>export</goal>
-						</goals>
-						<phase>test</phase>
-						<configuration>
-							<hibernateDialect>org.hibernate.dialect.Oracle10gDialect</hibernateDialect>
-							<outputFile>${project.build.directory}/schema_oracle_10g.sql</outputFile>
-						</configuration>
-					</execution> -->
  					<execution>
 						<id>postgresql</id>
 						<goals>
